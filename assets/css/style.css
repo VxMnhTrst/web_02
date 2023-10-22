@@ -1,0 +1,410 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.wraper
+{
+    padding: 3vw 10vw;
+    background-color: #e8eff1;
+}
+
+.header-container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#header-nav-logo #big-logo
+{
+    font-size: 3vw;
+}
+
+/* .header-nav-logo
+{
+    width: 35vw;
+} */
+
+.header-nav-logo #nav
+{
+    display: inline-block;
+}
+
+#nav li:last-child
+{
+    border: none;
+}
+
+#nav li {
+    display: inline-block;
+    border-right: 2px dotted black;
+    margin-top: 0.5vw;
+    padding: 0 0.5vw;
+    font-size: 16px;
+    color: #474747;
+    
+}
+
+#nav li a,
+#nav li a:visited
+{
+    text-decoration: none;
+    color: #474747;
+}
+
+.header-container #mail-box
+{
+    background-color: #fff;
+    padding: 2vw 1vw;
+    width: 35vw;
+    border-top: 10px dashed #e7696d;
+}
+
+#mail-box .mail-box-des
+{
+    padding-bottom: 1vw;
+    font-size: 18px;
+}
+
+#mail-box .mail-box-input input
+{
+    width: 70%;
+    padding: 0.5vw 0.5vw;
+}
+
+#mail-box .mail-box-input button
+{
+    padding: 0.75vw 1vw;
+    margin-left: 10px;
+    background-color: #a2b1bf;
+    border: none;
+    border-radius: 5px;
+}
+
+#mail-box .mail-box-input button:hover
+{
+    cursor: pointer;
+    background-color: #bdc8d3;
+}
+
+#content
+{
+    margin: 3vw 0;
+    background-color: #fff;
+    padding: 2vw 2vw;
+}
+
+#content .best-deal
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#content .best-deal .deal-content
+{
+    width: 50vw;
+}
+
+#content .best-deal .best-deal-header
+{
+    margin-bottom: 1vw;
+    font-size: 25px;
+}
+
+#content .deal-content img
+{
+    height: 28vw;
+    border: 5px groove #fff;
+}
+
+.best-deal .deal-content .best-deal-des
+{
+    padding: 2vw 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.expire-date-container
+{
+    display: block;
+}
+
+.expire-date
+{
+    margin: 1.5vw 2vw;
+    border: 2px solid #000;
+    padding-bottom: 2vw;
+    height: 80%;
+    border-collapse: collapse;
+}
+
+.best-deal .expire-date .expire-date-box p,
+.best-deal .expire-date .expire-date-box strong
+{
+    padding: 1vw 2vw;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.best-deal .expire-date .expire-date-box p:first-child,
+.expire-date .discount-tag p:first-child
+{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+.expire-date .discount-tag
+{
+    text-align: center;
+}
+
+.discount-tag .discount-percent .discount-big
+{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.best-deal .expire-date .expire-date-box p:nth-child(2)
+{
+    color: #000;
+    font-weight: 800;
+}
+
+.discount-tag .discount-price
+{
+    border-top: 1px dashed #888;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+.discount-tag .social-deal
+{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dashed #888;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+
+.discount-tag .social-deal .button-twitter,
+.discount-tag .social-deal .button-twitter button
+{
+    padding: 2px;
+    color: #1DA1F2;
+}
+
+.discount-tag .social-deal .button-facebook,
+.discount-tag .social-deal .button-facebook button
+{
+    padding: 2px;
+    color: #4267B2;
+}
+
+.discount-tag .social-deal .button-facebook button:hover,
+.discount-tag .social-deal .button-twitter button:hover
+{
+    cursor: pointer;
+}
+
+
+.expire-date-container .buy-deal
+{
+    padding: 1vw 2vw;
+    width: 15vw;
+    margin: 0 15%;
+    background-color: #accc66;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.expire-date-container .buy-deal:hover
+{
+    cursor: pointer;
+    background-color: #cade8a;
+}
+
+#brands-tape
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+    border-top: 3px dotted rgba(0, 0, 0, 0.5);
+    border-bottom: 3px dotted rgba(0, 0, 0, 0.5);
+}
+
+/* .content .grid-deal
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+} */
+
+.grid-deal {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: #fff;
+    margin: 2vw 0;
+    overflow: hidden;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: 3px dotted rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item .deal-header
+{
+    font-size: 20px;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.grid-item .deal-info
+{
+    padding: 10px 5px;
+    border: 2px solid #000;
+}
+
+.grid-item .deal-info img
+{
+    height: 10.75vw;
+    /* border: 5px groove #fff; */
+}
+
+.grid-item .deal-info .deal-price
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.deal-info .deal-price div:first-child
+{
+    padding-right: 12px;
+    border-right: 3px dotted rgba(0, 0, 0, 0.5);
+}
+
+.deal-info .deal-price div:last-child
+{
+    padding-left: 12px;
+    border-left: 3px dotted rgba(0, 0, 0, 0.5);
+}
+
+.deal-info .deal-price .discount-before p:first-child,
+.deal-info .deal-price .discount-percent p:first-child,
+.deal-info .deal-price .discount-save p:first-child
+{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+.deal-info .deal-price .discount-before p:last-child,
+.deal-info .deal-price .discount-percent p:last-child,
+.deal-info .deal-price .discount-save p:last-child
+{
+    font-weight: 800;
+}
+
+.grid-item .buy-info
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.grid-item .buy-info p
+{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 5px;
+    text-align: left;
+}
+
+.grid-item .buy-info .buy-btn
+{
+    text-transform: uppercase;
+    padding: 5px 5px;
+    background-color: #acce67;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.grid-item .buy-info .buy-btn:hover
+{
+    cursor: pointer;
+    background-color: #cbdd88;
+}
+
+.grid-deal .grid-item.buzz-info,
+.grid-deal .grid-item.about-info,
+.grid-item.other-info .other-page
+{
+    text-align: left;
+}
+
+.grid-deal .grid-item.about-info p
+{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.grid-deal .grid-item.buzz-info .buzz-item,
+.grid-item.other-info .other-page
+{
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.grid-item.buzz-info .buzz-item p
+{
+    margin-bottom: 10px;
+}
+
+.grid-item.buzz-info .buzz-item,
+.grid-item.other-info .other-page
+{
+    border-bottom: 3px dotted rgba(0, 0, 0, 0.5);;
+}
+
+.grid-item.buzz-info .buzz-item:last-child,
+.grid-item.other-info .other-page:last-child
+{
+    border-bottom: none;
+}
+
+.grid-item.buzz-info .buzz-item a
+{
+    text-decoration: none;
+    color: #add063;
+}
+
+.grid-item.buzz-info .buzz-item .buzz-time
+{
+    display: inline-block;
+    padding: 10px 5px;
+    background-color: #e9e9e9;
+}
+
+.grid-item.other-info .other-page a
+{
+    text-decoration: none;
+    color: #add063;
+}
